@@ -5,14 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{221E04F2-AA31-4FAC-B5CD-2BEA51C602C8}</ProjectGuid>
+    <ProjectGuid>{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Compiler</RootNamespace>
-    <AssemblyName>Compiler</AssemblyName>
+    <RootNamespace>ScratchProject</RootNamespace>
+    <AssemblyName>ScratchProject</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -47,13 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compiler\Compiler.cs" />
+    <Compile Include="GridWorldDemo\GridWorldGrammar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="ExampleTestFiles\Example.zs" />
     <None Include="packages.config" />
+    <EmbeddedResource Include="SourceFiles\Simple.gw" />
+    <EmbeddedResource Include="SourceFiles\Broken.gw" />
+    <EmbeddedResource Include="SourceFiles\Square.gw" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
