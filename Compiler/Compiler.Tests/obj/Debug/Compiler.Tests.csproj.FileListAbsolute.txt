@@ -1,0 +1,7 @@
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler.Tests\bin\Debug\Compiler.Tests.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler.Tests\bin\Debug\Compiler.Tests.pdb
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler.Tests\bin\Debug\Machine.Specifications.Clr4.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler.Tests\bin\Debug\Machine.Specifications.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler.Tests\obj\Debug\Compiler.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler.Tests\obj\Debug\Compiler.Tests.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler.Tests\obj\Debug\Compiler.Tests.pdb

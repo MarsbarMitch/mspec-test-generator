@@ -1,0 +1,4 @@
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler\bin\Debug\Compiler.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler\bin\Debug\Compiler.pdb
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler\obj\Debug\Compiler.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\mspec-test-generator\Compiler\Compiler\obj\Debug\Compiler.pdb
