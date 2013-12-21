@@ -6,6 +6,10 @@ This project will define a high level language, called zest, that can be used to
 
 The primary aim of this project is to reduce the amount of boilerplate code one has to produce when writing tests.
 
+Zest Compiler
+-
+The zest compiler is written in C# and uses irony to parse the zest grammar.
+
 To build a NuGet package for the compiler and to run its tests:
 --
 open powershell
