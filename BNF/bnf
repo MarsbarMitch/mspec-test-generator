@@ -1,0 +1,14 @@
+<program> ::= <TestSpecification>
+<TestSpecification> ::= <Definition> sut <SpecificationDeclaration> <TestDeclaration>+ <End>
+<SpecificationDeclaration> ::= <identifier> | <Identifier> : <Identifier>
+<TestDeclaration> ::= <Definition> <TestHeader> <TestBody>+ <End>
+<TestHeader> ::= when <Identifier>
+<TestBody> ::= because <BecauseStatement> | should <ShouldStatement>
+<BecauseStatement> ::=  <identifier>(<IdentifierList>?) | csut(<IdentifiderList>?)
+<ShouldStatement> ::= return <idnetifier> | throw <Identifier>
+<IdentifierList> ::= <Identifier> | <IdentifierList>, <Identifier>
+<Definition> ::= def
+<End> ::= end
+<Keywords> ::= def | sut | when | because | csut | should | throw | End
+
+<identifier> consists of strings that must start with a letter, can contain numbers and underscore. Must not be a key word
