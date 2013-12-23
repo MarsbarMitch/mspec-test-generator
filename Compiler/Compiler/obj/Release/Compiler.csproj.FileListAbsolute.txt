@@ -1,0 +1,7 @@
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Delivery\Build\Compiler\Compiler.dll
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Delivery\Build\Compiler\Compiler.pdb
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Delivery\Build\Compiler.Tests\Compiler.dll
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Delivery\Build\Compiler.Tests\Compiler.pdb
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\obj\Release\Compiler.csprojResolveAssemblyReference.cache
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\obj\Release\Compiler.dll
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\obj\Release\Compiler.pdb

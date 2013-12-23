@@ -1,14 +1,14 @@
 <Program> ::= <TestSpecification>
 <TestSpecification> ::= <Definition> sut <SpecificationDeclaration> <TestDeclaration>+ <End>
-<SpecificationDeclaration> ::= <identifier> | <Identifier> : <Identifier>
+<SpecificationDeclaration> ::= <Identifier> | <Identifier> : <Identifier>
 <TestDeclaration> ::= <Definition> <TestHeader> <TestBody>+ <End>
-<TestHeader> ::= when <Identifier>
+<TestHeader> ::= when <String>
 <TestBody> ::= because <BecauseStatement> | should <ShouldStatement>
-<BecauseStatement> ::=  <identifier>(<IdentifierList>?) | csut(<IdentifiderList>?)
-<ShouldStatement> ::= return <idnetifier> | throw <Identifier>
-<IdentifierList> ::= <Identifier> | <IdentifierList>, <Identifier>
+<BecauseStatement> ::=  <identifier>(<identifierList>?) | csut(<identifierList>?)
+<ShouldStatement> ::= return <identifier> | throw <identifier>
+<identifierList> ::= <identifier> | <identifierList>, <identifier>
 <Definition> ::= def
 <End> ::= end
 <Keywords> ::= def | sut | when | because | csut | should | throw | end
 
-<identifier> consists of strings that must start with a letter, can contain numbers and underscore. Must not be a key word
+<String> consists of strings that must start with a letter, can contain numbers and underscore. Must not be a key word

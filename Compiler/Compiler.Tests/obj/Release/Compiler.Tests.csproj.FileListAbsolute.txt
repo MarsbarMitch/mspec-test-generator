@@ -1,0 +1,5 @@
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Delivery\Build\Compiler.Tests\Compiler.Tests.dll
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Delivery\Build\Compiler.Tests\Compiler.Tests.pdb
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\obj\Release\Compiler.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\obj\Release\Compiler.Tests.dll
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\obj\Release\Compiler.Tests.pdb

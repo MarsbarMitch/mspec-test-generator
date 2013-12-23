@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Compiler</id>
+    <version>1.0</version>
+    <authors>Mitchell Eccles</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A compiler for the Zest test language</description>
+    <dependencies>
+      <dependency id="Irony" version="[0.9.0-net40]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Compiler.dll" target="lib" />
+  </files>
+</package>
