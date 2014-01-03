@@ -1,5 +1,5 @@
 ﻿def sut Foo : IFoo
-	def when "constructed"
+	def when constructed
 		because csut(null)
 		should throw ArgumentNullException
 	end

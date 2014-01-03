@@ -29,7 +29,8 @@ namespace Compiler.ZestGrammar
             NonTerminal shouldStatement = new NonTerminal("<ShouldStatement>");
             NonTerminal identifierList = new NonTerminal("<IdentifierList>");
             NonTerminal returnExpr = new NonTerminal("<ReturnExpr>");
-            NonTerminal numberList = new NonTerminal("<NumberList>");
+            NonTerminal valueList = new NonTerminal("<valueList>");
+            NonTerminal op = new NonTerminal("<Operator>");
             //bnf rules
             program.Rule = testSpecification;
             testSpecification.Rule = definition + ToTerm("sut") + specificationDeclaration + MakeStarRule(testDeclaration, testDeclaration) + end;//not sure the makeplus rule is correct
@@ -39,10 +40,12 @@ namespace Compiler.ZestGrammar
             end.Rule = ToTerm("end");
             testHeader.Rule = ToTerm("when") + stringTerm;
             testBody.Rule = "because" + becauseStatement | "should" + shouldStatement;
-            becauseStatement.Rule = identifier + ToTerm("(") + MakeStarRule(identifierList, ToTerm(","), identifier) + ")" | "csut" + "(" + MakeStarRule(identifierList, identifier) + ")" | identifier + ToTerm("(") + MakeStarRule(numberList, ToTerm(","), number) + ")";
+            becauseStatement.Rule = identifier + ToTerm("(") + identifierList + ")" | "csut" + "(" + MakeStarRule(identifierList, identifier) + ")" | identifier + ToTerm("(") + valueList + ")";
             shouldStatement.Rule = ToTerm("return") + returnExpr | "throw" + identifier;
             identifierList.Rule = identifier | MakePlusRule(identifierList, ToTerm(","), identifier);
-            returnExpr.Rule = number | stringTerm;
+            valueList.Rule = MakeStarRule(valueList, ToTerm(","), number) | MakeStarRule(valueList, ToTerm(","), stringTerm);
+            returnExpr.Rule = number | stringTerm | identifier + op + identifier;
+            op.Rule = ToTerm("*") | "+" | "-" | "/";
             this.Root = program;
             MarkPunctuation("def", "when", "sut", "(", ")", "csut", "because", "should", "throw", "return", "end", ":");
         }

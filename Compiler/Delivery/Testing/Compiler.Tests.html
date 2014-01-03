@@ -125,8 +125,8 @@ div.supplement {
 </h1>
 <h2 class="count">
   1 concern,
-  1 context,
-  1 specification
+  2 contexts,
+  4 specifications
 </h2>
   
   <hr/>
@@ -136,15 +136,15 @@ div.supplement {
   ZestParser specifications
 </h2>
 <h3 class="count">
-  1 context, 1 specification
+  2 contexts, 4 specifications
 </h3><h3 class="context">
-  when calling isValid
+  when calling Parse with valid code
 </h3>
 <h4 class="count">
-  1 specification
+  2 specifications
 </h4>
         <ul>
-          <li class="spec"><span id="1">should return true</span>
+          <li class="spec"><span id="1">should have no errors</span>
 
 
 
@@ -167,6 +167,37 @@ div.supplement {
     }
   };
 </script> 
+
+          </li>
+          <li class="spec"><span id="2">should set have parse tree root</span>
+
+
+
+
+ 
+
+          </li>
+        </ul><h3 class="context">
+  when calling parsing invalid source code
+</h3>
+<h4 class="count">
+  2 specifications
+</h4>
+        <ul>
+          <li class="spec"><span id="3">should have errors</span>
+
+
+
+
+ 
+
+          </li>
+          <li class="spec"><span id="4">should have one error</span>
+
+
+
+
+ 
 
           </li>
         </ul>

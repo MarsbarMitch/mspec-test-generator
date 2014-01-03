@@ -60,6 +60,7 @@
       <SubType>Designer</SubType>
     </None>
     <EmbeddedResource Include="Parser\Resources\Valid.zst" />
+    <EmbeddedResource Include="Parser\Resources\InvalidWhen.zst" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

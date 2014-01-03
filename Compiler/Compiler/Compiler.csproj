@@ -46,6 +46,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="ZestGrammar\ZestGrammar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZestParser\ParsedSourceCode.cs" />
     <Compile Include="ZestParser\ZestParser.cs" />
   </ItemGroup>
   <ItemGroup>

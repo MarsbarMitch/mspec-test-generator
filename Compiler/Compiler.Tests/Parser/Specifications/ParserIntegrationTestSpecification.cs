@@ -14,6 +14,7 @@ namespace Compiler.Tests.Parser.Specifications
     {
         protected static C.ZestParser Sut;
         protected static string ValidSourceCodeResource = "Compiler.Tests.Parser.Resources.Valid.zst";
+        protected static string InvalidSourceCodeResource = "Compiler.Tests.Parser.Resources.InvalidWhen.zst";
 
         Establish context = () => { };
 

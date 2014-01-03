@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Irony.Parsing;
+using Irony;
 
 namespace Compiler.ZestParser
 {
@@ -12,25 +13,14 @@ namespace Compiler.ZestParser
         public ZestParser(Grammar grammar)
         {
             this.grammar = grammar;
-            
         }
-        //why not refactor this to return error list if there are errors?
-        public bool isSourceCodeValid(string sourceCode)
+        
+        public ParsedSourceCode Parse(string sourceCode)
         {
-            return GetRoot(sourceCode) != null;
-        }
-
-        public ParseTreeNode GetRoot(string sourceCode)
-        {
-            Console.WriteLine(grammar.GrammarComments);
             LanguageData language = new LanguageData(grammar);
             Parser gridWorldParser = new Parser(language);
             ParseTree parseTree = gridWorldParser.Parse(sourceCode);
-            if (parseTree.HasErrors())
-            {
-                Console.WriteLine("{0} at line: {1}", parseTree.ParserMessages.First().Message, parseTree.ParserMessages.First().Location.Line.ToString());
-            }
-            return parseTree.Root;
-        }
+            return new ParsedSourceCode(parseTree.HasErrors(), parseTree.Root, parseTree.ParserMessages);
+        }        
     }
 }
