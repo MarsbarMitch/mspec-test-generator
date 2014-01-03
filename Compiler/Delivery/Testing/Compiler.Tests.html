@@ -124,27 +124,27 @@ div.supplement {
     Compiler.Tests
 </h1>
 <h2 class="count">
-  1 concern,
-  2 contexts,
-  4 specifications
+  3 concerns,
+  4 contexts,
+  9 specifications
 </h2>
   
   <hr/>
   <hr/>
   
   <h2 class="concern">
-  ZestParser specifications
+  ICommandExecutionEngine specifications
 </h2>
 <h3 class="count">
-  2 contexts, 4 specifications
+  1 context, 1 specification
 </h3><h3 class="context">
-  when calling Parse with valid code
+  when calling ExecuteCommands with three commands
 </h3>
 <h4 class="count">
-  2 specifications
+  1 specification
 </h4>
         <ul>
-          <li class="spec"><span id="1">should have no errors</span>
+          <li class="spec"><span id="1">should execute each command</span>
 
 
 
@@ -169,7 +169,71 @@ div.supplement {
 </script> 
 
           </li>
-          <li class="spec"><span id="2">should set have parse tree root</span>
+        </ul><h2 class="concern">
+  ICommandFactory specifications
+</h2>
+<h3 class="count">
+  1 context, 4 specifications
+</h3><h3 class="context">
+  when calling CreateCompilerCommands
+</h3>
+<h4 class="count">
+  4 specifications
+</h4>
+        <ul>
+          <li class="spec"><span id="2">should create three commands</span>
+
+
+
+
+ 
+
+          </li>
+          <li class="spec"><span id="3">should create a parse command</span>
+
+
+
+
+ 
+
+          </li>
+          <li class="spec"><span id="4">should create an ErrorHandling command</span>
+
+
+
+
+ 
+
+          </li>
+          <li class="spec"><span id="5">should create a CodeGenerator command</span>
+
+
+
+
+ 
+
+          </li>
+        </ul><h2 class="concern">
+  ZestParser specifications
+</h2>
+<h3 class="count">
+  2 contexts, 4 specifications
+</h3><h3 class="context">
+  when calling Parse with valid code
+</h3>
+<h4 class="count">
+  2 specifications
+</h4>
+        <ul>
+          <li class="spec"><span id="6">should have no errors</span>
+
+
+
+
+ 
+
+          </li>
+          <li class="spec"><span id="7">should set have parse tree root</span>
 
 
 
@@ -184,7 +248,7 @@ div.supplement {
   2 specifications
 </h4>
         <ul>
-          <li class="spec"><span id="3">should have errors</span>
+          <li class="spec"><span id="8">should have errors</span>
 
 
 
@@ -192,7 +256,7 @@ div.supplement {
  
 
           </li>
-          <li class="spec"><span id="4">should have one error</span>
+          <li class="spec"><span id="9">should have one error</span>
 
 
 

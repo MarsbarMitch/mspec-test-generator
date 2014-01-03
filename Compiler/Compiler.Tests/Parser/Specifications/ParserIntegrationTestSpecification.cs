@@ -18,9 +18,9 @@ namespace Compiler.Tests.Parser.Specifications
 
         Establish context = () => { };
 
-        protected static void CreateSut()
+        protected static void CreateSut(SourceCode sourceCode)
         {
-            Sut = new C.ZestParser(new G.ZestGrammar());
+            Sut = new C.ZestParser(new G.ZestGrammar(), sourceCode);
         }
 
         protected static string ReadInSourceCode(string resource)

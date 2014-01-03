@@ -40,6 +40,9 @@
     <Reference Include="Machine.Specifications.Clr4">
       <HintPath>..\packages\Machine.Specifications.0.5.10\lib\net40\Machine.Specifications.Clr4.dll</HintPath>
     </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1312.1622\lib\net40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,7 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Command\CommandExecutionEngine.cs" />
+    <Compile Include="Command\CommandFactory.cs" />
+    <Compile Include="Command\Specifications\CommandExecutionEngineSpecification.cs" />
+    <Compile Include="Command\Specifications\CommandFactorySpecification.cs" />
     <Compile Include="Parser\Specifications\ParserIntegrationTestSpecification.cs" />
     <Compile Include="Parser\ZestParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

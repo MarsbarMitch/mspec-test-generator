@@ -16,3 +16,5 @@ C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Test
 C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Irony.xml
 C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Compiler.dll
 C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Compiler.pdb
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Moq.dll
+C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Moq.xml
