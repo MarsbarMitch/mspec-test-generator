@@ -8,9 +8,9 @@ namespace Compiler.ZestErrorHandler
 {
     class ZestErrorHandling : ICommand
     {
-        private readonly SourceCode sourceCode;
+        private readonly ImmediateRepresentation sourceCode;
 
-        public ZestErrorHandling(SourceCode sourceCode)
+        public ZestErrorHandling(ImmediateRepresentation sourceCode)
         {
             this.sourceCode = sourceCode;
         }

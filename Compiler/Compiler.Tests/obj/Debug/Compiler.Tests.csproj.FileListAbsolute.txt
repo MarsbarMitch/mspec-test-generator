@@ -18,3 +18,17 @@ C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Test
 C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Compiler.pdb
 C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Moq.dll
 C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Moq.xml
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Compiler.Tests.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Compiler.Tests.pdb
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Compiler.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Irony.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Machine.Specifications.Clr4.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Machine.Specifications.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Moq.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Compiler.pdb
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Irony.pdb
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Irony.xml
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\bin\Debug\Moq.xml
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\obj\Debug\Compiler.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\obj\Debug\Compiler.Tests.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler.Tests\obj\Debug\Compiler.Tests.pdb

@@ -11,11 +11,11 @@ namespace Compiler.ZestParser
     class ZestParser : ICommand
     {
         private readonly Grammar grammar;
-        private readonly SourceCode sourceCode;
-        public ZestParser(Grammar grammar, SourceCode sourceCode)
+        private readonly ImmediateRepresentation immediateRep;
+        public ZestParser(Grammar grammar, ImmediateRepresentation immediateRep)
         {
             this.grammar = grammar;
-            this.sourceCode = sourceCode;
+            this.immediateRep = immediateRep;
         }
         
         public void Execute()
@@ -27,10 +27,10 @@ namespace Compiler.ZestParser
         {
             LanguageData language = new LanguageData(grammar);
             Parser gridWorldParser = new Parser(language);
-            ParseTree parseTree = gridWorldParser.Parse(sourceCode.ZestSourceCode);
-            sourceCode.HasErrors = parseTree.HasErrors();
-            sourceCode.ParseTreeRoot = parseTree.Root;
-            sourceCode.ErrorList = parseTree.ParserMessages;
+            ParseTree parseTree = gridWorldParser.Parse(immediateRep.ZestSourceCode);
+            immediateRep.HasErrors = parseTree.HasErrors();
+            immediateRep.ParseTreeRoot = parseTree.Root;
+            immediateRep.ErrorList = parseTree.ParserMessages;
         }
     }
 }

@@ -13,28 +13,28 @@ namespace Compiler.Tests.Parser
     [Subject(typeof(C.ZestParser))]
     class when_calling_Parse_with_valid_code : ParserIntegrationTestSpecification
     {
-        private static SourceCode sourceCode;
+        private static ImmediateRepresentation immediateRep;
         Establish context = () =>
         {
-            sourceCode = new SourceCode(ReadInSourceCode(ValidSourceCodeResource));
-            CreateSut(sourceCode);
+            immediateRep = new ImmediateRepresentation(ReadInSourceCode(ValidSourceCodeResource));
+            CreateSut(immediateRep);
         };
         Because of = () => Sut.Execute();
-        It should_have_no_errors = () => sourceCode.HasErrors.ShouldBeFalse();
-        It should_set_have_parse_tree_root = () => sourceCode.ParseTreeRoot.ShouldNotBeNull();
+        It should_have_no_errors = () => immediateRep.HasErrors.ShouldBeFalse();
+        It should_set_have_parse_tree_root = () => immediateRep.ParseTreeRoot.ShouldNotBeNull();
     }
     
     [Subject(typeof(C.ZestParser))]
     class when_calling_parsing_invalid_source_code : ParserIntegrationTestSpecification
     {
-        private static SourceCode sourceCode;
+        private static ImmediateRepresentation immediateRep;
         Establish context = () =>
         {
-            sourceCode = new SourceCode(ReadInSourceCode(InvalidSourceCodeResource));
-            CreateSut(sourceCode);
+            immediateRep = new ImmediateRepresentation(ReadInSourceCode(InvalidSourceCodeResource));
+            CreateSut(immediateRep);
         };
         Because of = () => Sut.Execute();
-        It should_have_errors = () => sourceCode.HasErrors.ShouldBeTrue();
-        It should_have_one_error = () => sourceCode.ErrorList.Count.ShouldEqual(1);
+        It should_have_errors = () => immediateRep.HasErrors.ShouldBeTrue();
+        It should_have_one_error = () => immediateRep.ErrorList.Count.ShouldEqual(1);
     }
 }

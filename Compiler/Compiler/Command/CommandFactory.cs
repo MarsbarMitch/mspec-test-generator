@@ -11,20 +11,20 @@ namespace Compiler.Command
 {
     class CommandFactory :ICommandFactory
     {
-        private readonly SourceCode sourceCode;
+        private readonly ImmediateRepresentation immediateRep;
         private readonly Grammar zestGrammar;
-        public CommandFactory(SourceCode sourceCode, Grammar zestGrammar)
+        public CommandFactory(ImmediateRepresentation immediateRep, Grammar zestGrammar)
         {
-            this.sourceCode = sourceCode;
+            this.immediateRep = immediateRep;
             this.zestGrammar = zestGrammar;
         }
 
         public IEnumerable<ICommand> CreateCompilerCommands()
         {
             var compilerCommands = new List<ICommand>();
-            compilerCommands.Add(new ZestParser.ZestParser(zestGrammar, sourceCode));
-            compilerCommands.Add(new ZestErrorHandling(sourceCode));
-            compilerCommands.Add(new CsharpTestGenerator(sourceCode));
+            compilerCommands.Add(new ZestParser.ZestParser(zestGrammar, immediateRep));
+            compilerCommands.Add(new ZestErrorHandling(immediateRep));
+            compilerCommands.Add(new CsharpTestGenerator(immediateRep));
             return compilerCommands;
         }
     }

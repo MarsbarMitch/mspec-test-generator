@@ -10,3 +10,11 @@ C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\bin\
 C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\bin\Debug\Irony.pdb
 C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\bin\Debug\Irony.xml
 C:\Users\Mitch\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\obj\Debug\Compiler.csprojResolveAssemblyReference.cache
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\bin\Debug\Compiler.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\bin\Debug\Compiler.pdb
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\bin\Debug\Irony.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\bin\Debug\Irony.pdb
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\bin\Debug\Irony.xml
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\obj\Debug\Compiler.csprojResolveAssemblyReference.cache
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\obj\Debug\Compiler.dll
+C:\Users\Mitchell Eccles\Documents\Visual Studio 2010\Projects\zest\Compiler\Compiler\obj\Debug\Compiler.pdb
