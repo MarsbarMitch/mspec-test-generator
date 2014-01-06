@@ -1,13 +1,17 @@
 <Program> ::= <TestSpecification>
-<TestSpecification> ::= <Definition> sut <SpecificationDeclaration> <TestDeclaration>+ <End>
+<TestSpecification> ::= <Definition> sut <SpecificationDeclaration> <TestDeclaration>* <End>
 <SpecificationDeclaration> ::= <Identifier> | <Identifier> : <Identifier>
 <TestDeclaration> ::= <Definition> <TestHeader> <TestBody>+ <End>
 <TestHeader> ::= when <String>
 <TestBody> ::= because <BecauseStatement> | should <ShouldStatement>
-<BecauseStatement> ::=  <identifier>(<identifierList>?) | csut(<identifierList>?)
-<ShouldStatement> ::= return <identifier> | throw <identifier>
-<identifierList> ::= <identifier> | <identifierList>, <identifier>
+<BecauseStatement> ::=  <Identifier> (<IdentifierList>?) | csut(<IdentifierList>?) | <Identifier>(<ValueList>)
+<ShouldStatement> ::= return <returnExpr> | throw <Identifier>
+<IdentifierList> ::= <Identifier> | <IdentifierList>, <Identifier>
+<ValueList> ::= <Value>, <ValueList>
+<returnExpr> ::= <Value> | <Identifier> <Operation> <Identifier>
+<Operation> ::= "+" | "-" | "*" | "/"
 <Definition> ::= def
+<Value> ::= <Number> | <String>
 <End> ::= end
 <Keywords> ::= def | sut | when | because | csut | should | throw | end
 
