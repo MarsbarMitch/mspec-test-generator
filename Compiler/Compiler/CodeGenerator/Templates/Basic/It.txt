@@ -1,0 +1,1 @@
+﻿It should_{BEHAVIOUR_NAME} = () => {IT_LOGIC};

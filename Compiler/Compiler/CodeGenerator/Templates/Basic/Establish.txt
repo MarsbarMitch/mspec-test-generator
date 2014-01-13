@@ -1,0 +1,4 @@
+﻿Establish context = () =>
+{
+	{ESTABLISH_LOGIC}			
+};

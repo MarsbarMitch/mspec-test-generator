@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr4.StringTemplate">
+      <HintPath>..\packages\Antlr4.StringTemplate.4.0.6.9004\lib\net35\Antlr4.StringTemplate.dll</HintPath>
+    </Reference>
     <Reference Include="Irony, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ca48ace7223ead47, processorArchitecture=MSIL">
       <HintPath>..\packages\Irony.0.9.0-net40\lib\net40\Irony.dll</HintPath>
     </Reference>
@@ -58,7 +61,15 @@
   <ItemGroup>
     <None Include="ExampleFiles\Example.zst" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="CodeGenerator\Templates\BaseSpecification.txt" />
+    <Content Include="CodeGenerator\Templates\BasicTestClass.txt" />
+    <Content Include="CodeGenerator\Templates\Because.txt" />
+    <Content Include="CodeGenerator\Templates\Establish.txt" />
+    <Content Include="CodeGenerator\Templates\HelperSpecification.txt" />
+    <Content Include="CodeGenerator\Templates\It.txt" />
+    <Content Include="CodeGenerator\Templates\TestTemplate.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
