@@ -18,7 +18,7 @@ namespace Compiler.Tests.Command
         Because of = () => result = Sut.CreateCompilerCommands();
         It should_create_three_commands = () => result.Count().ShouldEqual(3);
         It should_create_a_parse_command = () => result.ElementAt(0).ShouldBeOfType<c.ZestParser>();
-        It should_create_an_ErrorHandling_command = () => result.ElementAt(1).ShouldBeOfType<ZestErrorHandling>();
+        It should_create_an_ErrorHandling_command = () => result.ElementAt(1).ShouldBeOfType<ZestSyntaxHandling>();
         It should_create_a_CodeGenerator_command = () => result.ElementAt(2).ShouldBeOfType<CsharpTestGenerator>();
     }
 }

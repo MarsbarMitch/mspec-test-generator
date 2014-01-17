@@ -23,7 +23,7 @@ namespace Compiler.Command
         {
             var compilerCommands = new List<ICommand>();
             compilerCommands.Add(new ZestParser.ZestParser(zestGrammar, immediateRep));
-            compilerCommands.Add(new ZestErrorHandling(immediateRep));
+            compilerCommands.Add(new ZestSyntaxHandling(immediateRep));
             compilerCommands.Add(new CsharpTestGenerator(immediateRep));
             return compilerCommands;
         }

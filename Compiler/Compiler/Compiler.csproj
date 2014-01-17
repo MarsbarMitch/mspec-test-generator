@@ -56,7 +56,7 @@
     <Compile Include="Command\Interfaces\ICommandExecutionEngine.cs" />
     <Compile Include="Command\Interfaces\ICommandFactory.cs" />
     <Compile Include="Literals.cs" />
-    <Compile Include="ZestErrorHandler\ZestErrorHandling.cs" />
+    <Compile Include="ZestErrorHandler\ZestSyntaxHandling.cs" />
     <Compile Include="ZestGrammar\ZestGrammar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ImmediateRepresentation.cs" />
