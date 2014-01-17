@@ -1,0 +1,20 @@
+﻿using System;
+using Machine.Specifications;
+<USING_STATEMENTS>
+
+namespace <NAMESPACE>
+{
+	abstract class <SPECIFICATION_NAME>Specification <EXTENDS_SPECIFICAITON>
+	{
+		protected static <SUT_DECLARATION_TYPE> Sut;
+		
+		Establish context = () =>
+		{
+			
+		};
+		protected static void CreateSut()
+		{
+            Sut = new <SUT_CONCRETE_TYPE>();
+		}
+	}
+}

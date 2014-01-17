@@ -47,11 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeGenerator\CsharpTestGenerator.cs" />
+    <Compile Include="CodeGenerator\Template\TemplateAttributeReplacer.cs" />
+    <Compile Include="CodeGenerator\Template\TemplateLiterals.cs" />
+    <Compile Include="CodeGenerator\Template\TemplateReader.cs" />
     <Compile Include="Command\CommandExecutionEngine.cs" />
     <Compile Include="Command\CommandFactory.cs" />
     <Compile Include="Command\Interfaces\ICommand.cs" />
     <Compile Include="Command\Interfaces\ICommandExecutionEngine.cs" />
     <Compile Include="Command\Interfaces\ICommandFactory.cs" />
+    <Compile Include="Literals.cs" />
     <Compile Include="ZestErrorHandler\ZestErrorHandling.cs" />
     <Compile Include="ZestGrammar\ZestGrammar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,16 +63,17 @@
     <Compile Include="ZestParser\ZestParser.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CodeGenerator\Template\CsharpTemplates\TemplateForTesting.ztt" />
     <None Include="ExampleFiles\Example.zst" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CodeGenerator\Templates\BaseSpecification.txt" />
-    <Content Include="CodeGenerator\Templates\BasicTestClass.txt" />
-    <Content Include="CodeGenerator\Templates\Because.txt" />
-    <Content Include="CodeGenerator\Templates\Establish.txt" />
-    <Content Include="CodeGenerator\Templates\HelperSpecification.txt" />
-    <Content Include="CodeGenerator\Templates\It.txt" />
-    <Content Include="CodeGenerator\Templates\TestTemplate.txt" />
+    <EmbeddedResource Include="CodeGenerator\Template\CsharpTemplates\BaseSpecificationztt" />
+    <EmbeddedResource Include="CodeGenerator\Template\CsharpTemplates\TestNamespace.ztt" />
+    <EmbeddedResource Include="CodeGenerator\Template\CsharpTemplates\Basic\Because.ztt" />
+    <EmbeddedResource Include="CodeGenerator\Template\CsharpTemplates\Basic\Establish.ztt" />
+    <EmbeddedResource Include="CodeGenerator\Template\CsharpTemplates\HelperSpecification.ztt" />
+    <EmbeddedResource Include="CodeGenerator\Template\CsharpTemplates\Basic\It.ztt" />
+    <EmbeddedResource Include="CodeGenerator\Template\CsharpTemplates\Basic\TestClassTemplate.ztt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

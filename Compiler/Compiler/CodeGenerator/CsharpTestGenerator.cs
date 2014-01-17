@@ -8,10 +8,10 @@ namespace Compiler.CodeGenerator
 {
     class CsharpTestGenerator : ICommand
     {
-        private readonly ImmediateRepresentation sourceCode;
-        public CsharpTestGenerator(ImmediateRepresentation sourceCode)
+        private readonly ImmediateRepresentation immedieateRepresentation;
+        public CsharpTestGenerator(ImmediateRepresentation immedieateRepresentation)
         {
-            this.sourceCode = sourceCode;
+            this.immedieateRepresentation = immedieateRepresentation;
         }
 
         public void Execute()

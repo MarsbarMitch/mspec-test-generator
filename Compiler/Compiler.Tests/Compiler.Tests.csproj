@@ -55,6 +55,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeGenerator\Template\Specifications\TemplateAttributeReplacerSpecification.cs" />
+    <Compile Include="CodeGenerator\Template\Specifications\TemplateReaderSpecification.cs" />
+    <Compile Include="CodeGenerator\Template\TemplateAttributeReplacer.cs" />
+    <Compile Include="CodeGenerator\Template\TemplateReader.cs" />
     <Compile Include="Command\CommandExecutionEngine.cs" />
     <Compile Include="Command\CommandFactory.cs" />
     <Compile Include="Command\Specifications\CommandExecutionEngineSpecification.cs" />
