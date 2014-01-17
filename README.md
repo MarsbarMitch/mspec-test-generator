@@ -2,7 +2,7 @@ Zest
 ====================
 A C# test generator for the MSpec test framework(https://github.com/machine/machine.specifications). 
 
-This project will define a high level language, called zest, that can be used to generate mspec tests.
+This project will define a DSL, called zest, that can be used to generate mspec tests.
 
 The primary aim of this project is to reduce the amount of boilerplate code one has to produce when writing tests.
 
