@@ -50,6 +50,12 @@
     <Compile Include="CodeGenerator\Template\TemplateAttributeReplacer.cs" />
     <Compile Include="CodeGenerator\Template\TemplateLiterals.cs" />
     <Compile Include="CodeGenerator\Template\TemplateReader.cs" />
+    <Compile Include="CodeGenerator\Visitor\INodeVisitor.cs" />
+    <Compile Include="CodeGenerator\Visitor\Nodes\BecauseNode.cs" />
+    <Compile Include="CodeGenerator\Visitor\Nodes\EndNode.cs" />
+    <Compile Include="CodeGenerator\Visitor\Nodes\IAstNode.cs" />
+    <Compile Include="CodeGenerator\Visitor\Nodes\ShouldNode.cs" />
+    <Compile Include="CodeGenerator\Visitor\Nodes\WhenNode.cs" />
     <Compile Include="Command\CommandExecutionEngine.cs" />
     <Compile Include="Command\CommandFactory.cs" />
     <Compile Include="Command\Interfaces\ICommand.cs" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Irony.Parsing;
+using Compiler.CodeGenerator.Visitor.Nodes;
 
 namespace Compiler.ZestGrammar
 {
@@ -26,7 +27,7 @@ namespace Compiler.ZestGrammar
             NonTerminal testHeader = new NonTerminal("<TestHeader>");
             NonTerminal testBody = new NonTerminal("<TestBody>");
             NonTerminal becauseStatement = new NonTerminal("<BecauseStatement>");
-            NonTerminal shouldStatement = new NonTerminal("<ShouldStatement>");
+            NonTerminal shouldStatement = new NonTerminal("<ShouldStatement>", typeof(ShouldNode));
             NonTerminal identifierList = new NonTerminal("<IdentifierList>");
             NonTerminal returnExpr = new NonTerminal("<ReturnExpr>");
             NonTerminal valueList = new NonTerminal("<valueList>");
@@ -47,6 +48,7 @@ namespace Compiler.ZestGrammar
             returnExpr.Rule = number | stringTerm | identifier + op + identifier;
             op.Rule = ToTerm("*") | "+" | "-" | "/";
             this.Root = program;
+            this.LanguageFlags = LanguageFlags.CreateAst;
             MarkPunctuation("def", "when", "sut", "(", ")", "csut", "because", "should", "throw", "return", "end", ":");
         }
         

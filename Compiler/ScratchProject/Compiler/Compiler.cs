@@ -41,7 +41,10 @@ namespace ScratchProject.Compiler
                 throw new Exception("Source not valid;");
             }
             ParseTreeNode root = GetRoot(sourceCode);
-            
+
+            var astNode = root.AstNode;
+            //astNode.
+
             ParseTreeNodeList nodeList = root.ChildNodes;
             //first expecting a createStatement
             ParseTreeNode create = nodeList.First();
