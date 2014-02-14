@@ -17,16 +17,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|x86.ActiveCfg = Debug|x86
-		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|x86.Build.0 = Debug|x86
-		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Release|Any CPU.ActiveCfg = Release|x86
-		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Release|Mixed Platforms.Build.0 = Release|x86
-		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Release|x86.ActiveCfg = Release|x86
-		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Release|x86.Build.0 = Release|x86
 		{52643648-7D5A-4F6C-B33B-1EF423EE9E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52643648-7D5A-4F6C-B33B-1EF423EE9E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52643648-7D5A-4F6C-B33B-1EF423EE9E37}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -47,6 +37,20 @@ Global
 		{A8CDFE86-E59F-4687-987E-C18B06BD53EE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{A8CDFE86-E59F-4687-987E-C18B06BD53EE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A8CDFE86-E59F-4687-987E-C18B06BD53EE}.Release|x86.ActiveCfg = Release|Any CPU
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|Any CPU.Build.0 = Debug|x86
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|x86.ActiveCfg = Debug|x86
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Debug|x86.Build.0 = Debug|x86
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Release|Any CPU.ActiveCfg = Release|x86
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Release|Mixed Platforms.Build.0 = Release|x86
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Release|x86.ActiveCfg = Release|x86
+		{ACBCA90C-A3BB-4D81-BCAF-73D1162337DA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ScratchProject\ScratchProject.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,8 +12,8 @@ namespace ScratchProject
     {
         static void Main(string[] args)
         {
-            string sourceCode = ReadInSourceFile("ScratchProject.SourceFiles.Square.gw");
-            GridWorldGrammar grammar = new GridWorldGrammar();
+            string sourceCode = ReadInSourceFile("ScratchProject.SourceFiles.Simple.gw");
+            /*GridWorldGrammar grammar = new GridWorldGrammar();
             Compiler.Compiler compiler = new Compiler.Compiler(grammar);
             if (compiler.isValid(sourceCode))
             {
@@ -23,10 +23,11 @@ namespace ScratchProject
             else
             {
                 Console.WriteLine("Compiler error");
-            }
+            }*/
+			AstCompile(sourceCode);
         }
 
-        public static string ReadInSourceFile(string resource)
+        private static string ReadInSourceFile(string resource)
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
             using (Stream input = assembly.GetManifestResourceStream(resource))
@@ -37,5 +38,13 @@ namespace ScratchProject
                 }
             }
         }
+		
+		private static void AstCompile(String sourceCode)
+		{
+			GridWorldGrammar grammar = new GridWorldGrammar();
+			VisitorCompiler vc = new VisitorCompiler(grammar);
+			var astRoot = vc.GetAstRoot (sourceCode);
+			Console.WriteLine(astRoot.ToString());
+		}
     }
 }

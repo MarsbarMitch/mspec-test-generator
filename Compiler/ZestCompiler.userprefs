@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ScratchProject/Compiler/VisitorCompiler.cs">
+    <Files>
+      <File FileName="ScratchProject/GridWorldDemo/GridWorldGrammar.cs" Line="35" Column="49" />
+      <File FileName="ScratchProject/Program.cs" Line="15" Column="84" />
+      <File FileName="ScratchProject/SourceFiles/Simple.gw" Line="5" Column="11" />
+      <File FileName="ScratchProject/Compiler/VisitorCompiler.cs" Line="26" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/mitch/Documents/zest/Compiler/ScratchProject/Compiler/VisitorCompiler.cs" line="26" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

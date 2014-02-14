@@ -18,11 +18,11 @@ namespace ScratchProject.GridWorldDemo
 
             //Non terminals
             NonTerminal program = new NonTerminal("program");
-            NonTerminal createStatement = new NonTerminal("createStatement");
-            NonTerminal startStatement = new NonTerminal("startStatement");
-            NonTerminal moveStatements = new NonTerminal("moveStatements");
-            NonTerminal moveStatement = new NonTerminal("moveStatement");
-            NonTerminal direction = new NonTerminal("direction");
+            NonTerminal createStatement = new NonTerminal("createStatement", typeof(StartNode));
+            NonTerminal startStatement = new NonTerminal("startStatement", typeof(StartNode));
+            NonTerminal moveStatements = new NonTerminal("moveStatements", typeof(MovesNode));
+            NonTerminal moveStatement = new NonTerminal("moveStatement", typeof(MoveNode));
+            NonTerminal direction = new NonTerminal("direction", typeof(DirectionNode));
 
             //BNF rules
             program.Rule = createStatement + startStatement + moveStatements;
@@ -32,8 +32,10 @@ namespace ScratchProject.GridWorldDemo
             moveStatement.Rule = "Move" + direction + number + ".";
             direction.Rule = ToTerm("up") | "down" | "right" | "left";
             this.Root = program;
+			this.LanguageFlags = LanguageFlags.CreateAst;
             MarkPunctuation("Create", "a", "grid", "by", "Start", "at","location", ",", ".", "Move");
         }
+		
 
 
     }
